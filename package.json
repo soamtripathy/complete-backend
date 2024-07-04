@@ -1,7 +1,7 @@
 {
   "name": "complete-backend",
   "version": "1.0.0",
-  "description": "a complete backend",
+  "description": "a complete backend series",
   "main": "index.js",
   "type": "module",
   "scripts": {
