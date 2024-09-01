@@ -1,24 +1,43 @@
-# A complete backend series
+# Welcome to Complete Backend Series by Chai aur Code 👋
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/soamtripathy/complete-backend#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/soamtripathy/complete-backend/graphs/commit-activity)
+[![License: ISC](https://img.shields.io/github/license/soamtripathy/Complete Backend Series by Chai aur Code)](https://github.com/soamtripathy/complete-backend/blob/master/LICENSE)
+[![Twitter: folio-soamtripathy.vercel.app\/](https://img.shields.io/twitter/follow/folio-soamtripathy.vercel.app\/.svg?style=social)](https://twitter.com/folio-soamtripathy.vercel.app\/)
 
-- [Model](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj)
+> a complete backend series 
 
-### Geneate a Random JWT Secret Key
-To generate a random JWT secret key, you can use a tool like Node.js to create a random string. Here's a simple example:
+### 🏠 [Homepage](https://github.com/soamtripathy/complete-backend#readme)
 
-1. Open your terminal or command prompt.
-2. Run the following Node.js script to generate a random string:
+## Install
 
-```node -e "console.log(require('crypto').randomBytes(32).toString('hex')) ```
+```sh
+npm install
+```
 
-This command uses the crypto module in Node.js to generate a random sequence of 32 bytes and then converts it to a hexadecimal string.
-1. Copy the generated string.
+## Author
 
-2. Open your .env file and set the JWT secret key:
+👤 **Soam Tripathy**
 
-``` JWT_SECRET=paste-the-generated-string-here ```
+* Website: https://portfolio-soamtripathy.vercel.app/
+* Github: [@soamtripathy](https://github.com/soamtripathy)
+* LinkedIn: [@soumyaranjantripathy](https://linkedin.com/in/soumyaranjantripathy)
 
-Replace paste-the-generated-string-here with the string you copied.
+## 🤝 Contributing
 
-Save the changes to your .env file.
+Contributions, issues and feature requests are welcome!
 
-Now, you have a securely generated JWT secret key. Remember to keep this key confidential and don't share it publicly. If needed, you can regenerate the key and update it in your .env file.
+Feel free to check [issues page](https://github.com/soamtripathy/complete-backend/issues). You can also take a look at the [contributing guide](https://github.com/soamtripathy/complete-backend/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+
+## 📝 License
+
+Copyright © 2024 [Soam Tripathy](https://github.com/soamtripathy).
+
+This project is [ISC](https://github.com/soamtripathy/complete-backend/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
