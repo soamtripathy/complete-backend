@@ -1,5 +1,5 @@
 // Define a higher-order function named asyncHandler
-const asyncHandler = () => {
+const asyncHandler = (requestHandler) => {
   // Return a new middleware function that takes req, res, and next as parameters
   return (req, res, next) => {
     // Wrap the requestHandler function call in a Promise to handle asynchronous operations
