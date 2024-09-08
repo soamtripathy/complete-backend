@@ -394,7 +394,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
   const user = await User.aggregate([
     {
       $match: {
-        _id: mongoose.Types.ObjectId(req.user._id.toString()),
+        _id: mongoose.Types.ObjectId(req.user._id), //doubt to be asked
       },
     },
     {
@@ -419,12 +419,12 @@ const getWatchHistory = asyncHandler(async (req, res) => {
                   },
                 },
                 {
-                  $addFields : {
-                    owner : {
-                      $first : "$owner"
-                    }
-                  }
-                }
+                  $addFields: {
+                    owner: {
+                      $first: "$owner",
+                    },
+                  },
+                },
               ],
             },
           },
@@ -432,6 +432,16 @@ const getWatchHistory = asyncHandler(async (req, res) => {
       },
     },
   ]);
+
+  return res
+    .status(200)
+    .json(
+      new ApiResponse(
+        200,
+        user[0].watchHistory,
+        "Watch history fetched successfully!"
+      )
+    );
 });
 
 export {
@@ -445,4 +455,5 @@ export {
   updateUserAvatar,
   updateUserCoverImage,
   getUserChannelProfile,
+  getWatchHistory,
 };
